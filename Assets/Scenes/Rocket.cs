@@ -26,6 +26,19 @@ public class Rocket : MonoBehaviour
         Rotate();
     }
 
+    void OnCollisionEnter(Collision collision)
+    {
+        switch (collision.gameObject.tag)
+        {
+            case "Friendly":
+                print("OK");
+                break;
+            default:
+                print("Dead");
+                break;
+        }
+    }
+
     void Thrust()
     {
         float impulseThisFrame = mainThrust * Time.deltaTime;
@@ -33,7 +46,9 @@ public class Rocket : MonoBehaviour
         {
             rigidbody.AddRelativeForce(Vector3.up * impulseThisFrame);
             if (!audioSource.isPlaying)
+            {
                 audioSource.Play();
+            }
         }
         else if (audioSource.isPlaying)
         {
