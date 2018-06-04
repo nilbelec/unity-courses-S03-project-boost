@@ -44,7 +44,7 @@ RenderSettings:
 LightmapSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 11
-  m_GIWorkflowMode: 0
+  m_GIWorkflowMode: 1
   m_GISettings:
     serializedVersion: 2
     m_BounceScale: 1
@@ -89,7 +89,8 @@ LightmapSettings:
     m_PVRFilteringAtrousPositionSigmaIndirect: 2
     m_PVRFilteringAtrousPositionSigmaAO: 1
     m_ShowResolutionOverlay: 1
-  m_LightingDataAsset: {fileID: 0}
+  m_LightingDataAsset: {fileID: 112000002, guid: dc3aad847d69b41539eea68061dd5f3a,
+    type: 2}
   m_UseShadowmask: 1
 --- !u!196 &4
 NavMeshSettings:
@@ -450,11 +451,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4555735128658098, guid: db7a2680d1c8c4a66b992c810cf77a5c, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 8.82
+      value: 8.81
       objectReference: {fileID: 0}
     - target: {fileID: 4555735128658098, guid: db7a2680d1c8c4a66b992c810cf77a5c, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 18.01
+      value: 18.05
       objectReference: {fileID: 0}
     - target: {fileID: 4555735128658098, guid: db7a2680d1c8c4a66b992c810cf77a5c, type: 2}
       propertyPath: m_LocalPosition.z
@@ -829,19 +830,19 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4555735128658098, guid: db7a2680d1c8c4a66b992c810cf77a5c, type: 2}
       propertyPath: m_LocalRotation.x
-      value: -0.1432708
+      value: 0.09367564
       objectReference: {fileID: 0}
     - target: {fileID: 4555735128658098, guid: db7a2680d1c8c4a66b992c810cf77a5c, type: 2}
       propertyPath: m_LocalRotation.y
-      value: 0.06064228
+      value: -0.009142324
       objectReference: {fileID: 0}
     - target: {fileID: 4555735128658098, guid: db7a2680d1c8c4a66b992c810cf77a5c, type: 2}
       propertyPath: m_LocalRotation.z
-      value: -0.948202
+      value: -0.9543786
       objectReference: {fileID: 0}
     - target: {fileID: 4555735128658098, guid: db7a2680d1c8c4a66b992c810cf77a5c, type: 2}
       propertyPath: m_LocalRotation.w
-      value: -0.27696365
+      value: -0.28337747
       objectReference: {fileID: 0}
     - target: {fileID: 4555735128658098, guid: db7a2680d1c8c4a66b992c810cf77a5c, type: 2}
       propertyPath: m_RootOrder
@@ -866,7 +867,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4555735128658098, guid: db7a2680d1c8c4a66b992c810cf77a5c, type: 2}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: -211.18
+      value: -212.71999
       objectReference: {fileID: 0}
     - target: {fileID: 4555735128658098, guid: db7a2680d1c8c4a66b992c810cf77a5c, type: 2}
       propertyPath: m_LocalScale.z
@@ -874,11 +875,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4555735128658098, guid: db7a2680d1c8c4a66b992c810cf77a5c, type: 2}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: 11.208
+      value: -4.045
       objectReference: {fileID: 0}
     - target: {fileID: 4555735128658098, guid: db7a2680d1c8c4a66b992c810cf77a5c, type: 2}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 14.048
+      value: -10.024
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: db7a2680d1c8c4a66b992c810cf77a5c, type: 2}
