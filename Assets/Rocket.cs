@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class Rocket : MonoBehaviour
@@ -17,6 +18,8 @@ public class Rocket : MonoBehaviour
     [SerializeField] ParticleSystem successParticles;
 
     enum State { Alive, Dying, Trascending }
+
+    Boolean godMode = false;
 
     State state = State.Alive;
 
@@ -38,6 +41,22 @@ public class Rocket : MonoBehaviour
             RespondToThrustInput();
             RespondToRotateInput();
         }
+        if (Debug.isDebugBuild) 
+        {
+            RespondToDebugKeys();
+        }
+    }
+
+    void RespondToDebugKeys()
+    {
+        if (Input.GetKeyDown(KeyCode.L))
+        {
+            LoadNextLevel();
+        }
+        else if (Input.GetKeyDown(KeyCode.C))
+        {
+            godMode = !godMode;
+        }
     }
 
     void OnCollisionEnter(Collision collision)
@@ -53,7 +72,10 @@ public class Rocket : MonoBehaviour
                 StartSuccessSequence();
                 break;
             default:
-                StartDeathSequence();
+                if (!godMode)
+                {
+                    StartDeathSequence();
+                }
                 break;
         }
     }
